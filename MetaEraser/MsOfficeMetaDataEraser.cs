@@ -83,12 +83,12 @@ namespace MetaEraser
 				String fileContent = File.ReadAllText(this.dirName + this.pathToMetaData[i]);
 
 				String[] elementsToDelete = {	
-												"<dc:title>.*</dc:title>",
-												"<dc:creator>.*</dc:creator>",
-												"<cp:lastModifiedBy>.*</cp:lastModifiedBy>",
-												"<cp:revision>.*</cp:revision>",
-												"<Application>.*</Application>"
-											};
+							"<dc:title>.*</dc:title>",
+							"<dc:creator>.*</dc:creator>",
+							"<cp:lastModifiedBy>.*</cp:lastModifiedBy>",
+							"<cp:revision>.*</cp:revision>",
+							"<Application>.*</Application>"
+				};
 
 				foreach(var item in elementsToDelete)
 				{

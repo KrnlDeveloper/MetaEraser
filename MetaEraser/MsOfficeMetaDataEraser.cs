@@ -62,11 +62,29 @@ namespace MetaEraser
 		///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		public void Sanitize()
 		{
-			this.UnzipFile();
-			this.ZeroAllElementsInXml();
-			this.ZipFile();
-			this.RenameArchieve();
-			this.DeleteTmpFiles();
+			try
+			{
+				this.UnzipFile();
+				this.ZeroAllElementsInXml();
+				this.ZipFile();
+				this.RenameArchieve();
+				this.DeleteTmpFiles();
+			}
+			
+			catch(Exception exp)
+			{
+				if(Directory.Exists(this.dirName))
+				{
+					this.DeleteTmpFiles();
+				}
+
+				if(File.Exists(this.dirName + this.zipExt))
+				{
+					File.Delete(this.dirName + this.zipExt);
+				}
+				
+				throw;
+			}
 		}
 
 		///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

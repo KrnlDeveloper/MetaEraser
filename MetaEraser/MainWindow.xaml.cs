@@ -114,7 +114,7 @@ namespace MetaEraser
 							Int32 pointPos = file.LastIndexOf('.');
 							Int32 slashPos = file.LastIndexOf('\\');
 
-							String newFileName = file.Substring(slashPos + 1, pointPos - slashPos - 1) + "_cln";
+							String newFileName = file.Substring(slashPos + 1, pointPos - slashPos - 1) + "_" + DateTime.Now.ToString().Replace(':', '.').Replace(' ', '_');
 							MsOfficeMetaDataEraser eraser = new MsOfficeMetaDataEraser(file, newFileName, this.overwriteExistingFile);
 							eraser.Sanitize();
 						}

@@ -82,7 +82,8 @@ namespace MetaEraser
 			{
 				String fileContent = File.ReadAllText(this.dirName + this.pathToMetaData[i]);
 
-				String[] elementsToDelete = {	"<dc:title>.*</dc:title>",
+				String[] elementsToDelete = {	
+												"<dc:title>.*</dc:title>",
 												"<dc:creator>.*</dc:creator>",
 												"<cp:lastModifiedBy>.*</cp:lastModifiedBy>",
 												"<cp:revision>.*</cp:revision>",

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MetaEraser"
         mc:Ignorable="d"
-        Title="Metadata Eraser" Height="250" Width="350" WindowStyle="None" AllowsTransparency="True" BorderBrush="Black" FontFamily="Consolas">
+        Title="Metadata Eraser" Height="250" Width="370" WindowStyle="None" AllowsTransparency="True" BorderBrush="Black" FontFamily="Consolas">
 	<DockPanel x:Name="MainWindowPanel" Background="Wheat">
 		<DockPanel x:Name="TitleBar" Height="20" DockPanel.Dock="Top" Background="Gold">
 			<Button x:Name="closeButton" DockPanel.Dock="Right" Content="X" Width="25" BorderThickness="0" Background="Red"/>
@@ -15,7 +15,7 @@
 		<Grid>
 			<RadioButton x:Name="overwriteRadioBtn" Content="Overwrite existing file" HorizontalAlignment="Left" Margin="20,10,0,0" VerticalAlignment="Top" FontFamily="Consolas"/>
 			<RadioButton x:Name="saveRadioBtn" Content="Save as a new file" HorizontalAlignment="Left" Margin="20,40,0,0" VerticalAlignment="Top" FontFamily="Consolas"/>
-			<Image x:Name="formImg" HorizontalAlignment="Left" Height="180" Margin="160,40,0,0" VerticalAlignment="Top" Width="180"/>
+			<Image x:Name="formImg" HorizontalAlignment="Left" Height="180" Margin="180,40,0,0" VerticalAlignment="Top" Width="180"/>
 		</Grid>
 	</DockPanel>
 </Window>

@@ -24,7 +24,7 @@ namespace MetaEraser
 		{
 			InitializeComponent();
 
-			Uri iconUri = new Uri("pack://application:,,,/MetaEraser.ico", UriKind.RelativeOrAbsolute);
+			Uri iconUri = new Uri("pack://application:,,,/MetaEraser.png", UriKind.RelativeOrAbsolute);
 			this.Icon = BitmapFrame.Create(iconUri);
 
 			this.AllowDrop = true;
